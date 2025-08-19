@@ -1,194 +1,226 @@
 <!DOCTYPE html>
 <html lang="uz">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title data-i18n="metaTitle">Asqaraliyev Faxriddin | Node.js Backend Engineer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Asqaraliyev Faxriddin | Node.js Backend Engineer</title>
   <link rel="stylesheet" href="./src/output.css">
-  <meta name="description" content="Node.js Backend Engineer — Telegram botlar, REST/GraphQL API, RBAC, Docker, CI/CD" />
 </head>
 <body class="bg-gray-50 text-gray-900">
-  <header class="bg-white/90 backdrop-blur border-b border-gray-200 sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-      <a href="#home" class="flex items-center gap-3">
-        <img src="img/rasm.jpg" alt="Asqaraliyev Faxriddin" class="w-10 h-10 rounded-full object-cover ring-2 ring-gray-200" />
-        <span class="font-semibold">Asqaraliyev Faxriddin</span>
+
+<header class="bg-white/90 backdrop-blur border-b border-gray-200 sticky top-0 z-50">
+  <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+    <a href="#home" class="flex items-center gap-3">
+      <img src="img/rasm.jpg" alt="Asqaraliyev Faxriddin" class="w-10 h-10 rounded-full object-cover ring-2 ring-gray-200">
+      <span class="font-semibold">Asqaraliyev Faxriddin</span>
+    </a>
+    <nav class="flex items-center gap-2">
+      <button data-lang="uz" class="lang-btn px-3 py-1.5 text-sm rounded-full border hover:bg-gray-100 focus:outline-none">UZ</button>
+      <button data-lang="ru" class="lang-btn px-3 py-1.5 text-sm rounded-full border hover:bg-gray-100 focus:outline-none">RU</button>
+      <button data-lang="en" class="lang-btn px-3 py-1.5 text-sm rounded-full border hover:bg-gray-100 focus:outline-none">EN</button>
+      <a href="#contact" class="ml-3 px-4 py-1.5 text-sm rounded-full bg-blue-600 text-white hover:bg-blue-700" data-i18n="navContact">Bogʻlanish</a>
+    </nav>
+  </div>
+</header>
+
+<section id="home" class="bg-gradient-to-b from-blue-50 to-transparent">
+  <div class="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <h1 class="text-3xl md:text-4xl font-bold leading-tight mb-3">Asqaraliyev Faxriddin</h1>
+      <p class="text-blue-700 font-medium" data-i18n="role">Node.js Backend Engineer</p>
+      <p class="mt-5 text-gray-700" data-i18n="heroText">Telegram botlar va full‑stack loyihalar: server arxitekturasi, SQL/MongoDB, RBAC, samarali algoritmlar.</p>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <a href="#projects" class="px-5 py-2 rounded-full bg-blue-600 text-white hover:bg-blue-700" data-i18n="viewProjects">Loyihalarni ko‘rish</a>
+        <a href="#about" class="px-5 py-2 rounded-full border border-gray-300 hover:bg-white" data-i18n="learnMore">Batafsil</a>
+      </div>
+    </div>
+    <div class="flex justify-center md:justify-end">
+      <img src="img/rasm.jpg" alt="Faxriddin portreti" class="w-56 h-56 md:w-72 md:h-72 rounded-3xl object-cover shadow-xl ring-4 ring-white">
+    </div>
+  </div>
+</section>
+
+<section id="about" class="py-16 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-4">
+    <h3 class="text-2xl font-bold mb-4" data-i18n="aboutTitle">Men haqimda</h3>
+    <p class="mb-4" data-i18n="aboutP1"></p>
+    <p class="mb-4" data-i18n="aboutP2"></p>
+    <p class="mb-4" data-i18n="aboutP3"></p>
+    <p class="mb-4" data-i18n="aboutP4"></p>
+    <p><strong data-i18n="stackTitle">Texnologiyalar</strong></p>
+  </div>
+</section>
+
+<section id="projects" class="py-16 bg-gray-100">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-2xl md:text-3xl font-bold mb-8" data-i18n="projectsTitle">Loyihalar</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <a href="https://github.com/Asqaraliyev-Faxriddin/Telegram-bot" target="_blank" class="group block bg-white rounded-2xl shadow p-6 hover:shadow-lg transition">
+        <div class="flex items-start justify-between gap-4">
+          <h3 class="text-lg font-semibold">Telegram Bot</h3>
+          <span class="text-xs px-2 py-1 rounded-full bg-blue-50 text-blue-700 border border-blue-200" data-i18n="openGithub">GitHub</span>
+        </div>
+        <p class="mt-2 text-sm text-gray-700" data-i18n="proj1Desc">Interaktiv va avtomatlashtirilgan funksiyalar, backend integratsiyasi.</p>
       </a>
-      <nav class="flex items-center gap-2">
-        <button data-lang="uz" class="lang-btn px-3 py-1.5 text-sm rounded-full border hover:bg-gray-100 focus:outline-none">UZ</button>
-        <button data-lang="ru" class="lang-btn px-3 py-1.5 text-sm rounded-full border hover:bg-gray-100 focus:outline-none">RU</button>
-        <button data-lang="en" class="lang-btn px-3 py-1.5 text-sm rounded-full border hover:bg-gray-100 focus:outline-none">EN</button>
-        <a href="#contact" class="ml-3 px-4 py-1.5 text-sm rounded-full bg-blue-600 text-white hover:bg-blue-700"> <span data-i18n="navContact">Bogʻlanish</span> </a>
-      </nav>
-    </div>
-  </header>
-
-  <section id="home" class="bg-gradient-to-b from-blue-50 to-transparent">
-    <div class="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
-      <div>
-        <h1 class="text-3xl md:text-4xl font-bold leading-tight mb-3">
-          <span>Asqaraliyev Faxriddin</span>
-        </h1>
-        <p class="text-blue-700 font-medium" data-i18n="role">Node.js Backend Engineer</p>
-        <p class="mt-5 text-gray-700" data-i18n="heroText">
-          Telegram botlar va full‑stack loyihalar: server arxitekturasi, SQL/MongoDB, RBAC, samarali algoritmlar.
-        </p>
-        <div class="mt-6 flex flex-wrap gap-3">
-          <a href="#projects" class="px-5 py-2 rounded-full bg-blue-600 text-white hover:bg-blue-700" data-i18n="viewProjects">Loyihalarni ko‘rish</a>
-          <a href="#about" class="px-5 py-2 rounded-full border border-gray-300 hover:bg-white" data-i18n="learnMore">Batafsil</a>
+      <a href="https://github.com/Asqaraliyev-Faxriddin/Loyiha-exam" target="_blank" class="group block bg-white rounded-2xl shadow p-6 hover:shadow-lg transition">
+        <div class="flex items-start justify-between gap-4">
+          <h3 class="text-lg font-semibold">Movie Project</h3>
+          <span class="text-xs px-2 py-1 rounded-full bg-blue-50 text-blue-700 border border-blue-200" data-i18n="openGithub">GitHub</span>
         </div>
-      </div>
-      <div class="flex justify-center md:justify-end">
-        <img src="img/rasm.jpg" alt="Faxriddin portreti" class="w-56 h-56 md:w-72 md:h-72 rounded-3xl object-cover shadow-xl ring-4 ring-white" />
-      </div>
+        <p class="mt-2 text-sm text-gray-700" data-i18n="proj2Desc">Foydalanuvchi va admin panellari, RBAC, ma’lumotlar bazasi bilan ishlash.</p>
+      </a>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="about" class="py-16 bg-gray-50">
-    <div class="max-w-6xl mx-auto px-4">
-      <h3 class="text-2xl font-bold mb-4">Men haqimda</h3>
-      <p class="mb-4">
-        Professional faoliyatimning boshida bo‘lishimga qaramay, ko‘plab Telegram botlar va 
-        full-stack veb loyihalarni ishlab chiqqanman. Backend arxitekturalarini loyihalash, 
-        ma’lumotlar bazalari (SQL) bilan ishlash va samarali algoritmlar yaratishda tajribaga egaman. 
-        Loyiha ishlarim ko‘pincha admin va foydalanuvchi panellari, rollarga asoslangan kirish nazorati (RBAC) 
-        hamda murakkab mantiqiy yechimlarni o‘z ichiga oladi.
-      </p>
-      <p class="mb-4">
-        Najot Ta’limda Full Stack kursining backend modulini muvaffaqiyatli tamomlaganman va hozir frontend 
-        modulida bilimlarimni oshirmoqdaman. Bu davr mobaynida REST va GraphQL API larini yaratish, 
-        foydalanuvchilarni autentifikatsiya va avtorizatsiya qilish, JWT va refresh tokenlar orqali 
-        xavfsizlikni ta’minlash, Clean Architecture va MVC kabi testlanuvchi arxitekturalarni qo‘llashda 
-        amaliy ko‘nikmalarga ega bo‘ldim.
-      </p>
-      <p class="mb-4">
-        Shuningdek, backend xizmatlari bilan integratsiyalangan Telegram botlar ishlab chiqdim, 
-        bu foydalanuvchilar uchun avtomatlashtirilgan va interaktiv funksiyalarni taqdim etdi. 
-        Asinxron amallar, tranzaksiyalar, ACID prinsiplari orqali ma’lumotlar ishonchliligi va xavfsizligini 
-        ta’minlashni o‘rgandim.
-      </p>
-      <p class="mb-4">
-        Hozirda React.js, JavaScript va Tailwind CSS yordamida zamonaviy, responsiv va 
-        foydalanuvchilarga qulay interfeyslar yaratishni o‘rganmoqdaman. 
-        Backend va Frontend sohalaridagi qo‘shimcha tajribam tufayli men yuqori sifatli, 
-        to‘liq ishlaydigan veb-ilovalarni yaratishga qodir bo‘lgan to‘laqonli Full Stack dasturchiga aylanib boryapman.
-      </p>
-      <p>
-        <strong>Texnologiyalar:</strong> Node.js, Express.js, Nest.js, GraphQL, REST, Socket.io, 
-        PostgreSQL, MySQL, MongoDB, Redis, Mongoose, Prisma, Sequelize, Docker, Jest, CI/CD, 
-        PassportJS, Microservices, RabbitMQ, AWS Cloud va boshqalar.
-      </p>
-    </div>
-  </section>
-  
-
-  <section id="projects" class="py-16 bg-gray-100">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-2xl md:text-3xl font-bold mb-8" data-i18n="projectsTitle">Loyihalar</h2>
-      <div class="grid md:grid-cols-2 gap-6">
-        <a href="https://github.com/Asqaraliyev-Faxriddin/Telegram-bot" target="_blank" class="group block bg-white rounded-2xl shadow p-6 hover:shadow-lg transition">
-          <div class="flex items-start justify-between gap-4">
-            <h3 class="text-lg font-semibold">Telegram Bot</h3>
-            <span class="text-xs px-2 py-1 rounded-full bg-blue-50 text-blue-700 border border-blue-200" data-i18n="openGithub">GitHub</span>
-          </div>
-          <p class="mt-2 text-sm text-gray-700" data-i18n="proj1Desc">Interaktiv va avtomatlashtirilgan funksiyalar, backend integratsiyasi.</p>
-        </a>
-        <a href="https://github.com/Asqaraliyev-Faxriddin/Loyiha-exam" target="_blank" class="group block bg-white rounded-2xl shadow p-6 hover:shadow-lg transition">
-          <div class="flex items-start justify-between gap-4">
-            <h3 class="text-lg font-semibold">Movie Project</h3>
-            <span class="text-xs px-2 py-1 rounded-full bg-blue-50 text-blue-700 border border-blue-200" data-i18n="openGithub">GitHub</span>
-          </div>
-          <p class="mt-2 text-sm text-gray-700" data-i18n="proj2Desc">Foydalanuvchi va admin panellari, RBAC, ma’lumotlar bazasi bilan ishlash.</p>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="py-16">
-    <div class="max-w-6xl mx-auto px-4">
-      <div class="bg-white rounded-2xl shadow p-8">
-        <h2 class="text-2xl md:text-3xl font-bold mb-4" data-i18n="contactTitle">Bog‘lanish</h2>
-        <div class="grid md:grid-cols-3 gap-6 text-sm">
-          <div>
-            <p class="text-gray-500" data-i18n="contactPhone">Telefon</p>
-            <a href="tel:+998903641207" class="font-medium">+998 90 364 12 07</a>
-          </div>
-          <div>
-            <p class="text-gray-500">Telegram</p>
-            <a href="https://t.me/Asqaraliyev_Faxriddin" target="_blank" class="font-medium">@Asqaraliyev_Faxriddin</a>
-          </div>
-          <div>
-            <p class="text-gray-500">Email</p>
-            <a href="mailto:asqaraliyevfaxriddin2010@gmail.com" class="font-medium">asqaraliyevfaxriddin2010@gmail.com</a>
-          </div>
+<section id="contact" class="py-16">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="bg-white rounded-2xl shadow p-8">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4" data-i18n="contactTitle">Bog‘lanish</h2>
+      <div class="grid md:grid-cols-3 gap-6 text-sm">
+        <div>
+          <p class="text-gray-500" data-i18n="contactPhone">Telefon</p>
+          <a href="tel:+998903641207" class="font-medium">+998 90 364 12 07</a>
+        </div>
+        <div>
+          <p class="text-gray-500" data-i18n="contactTelegram">Telegram</p>
+          <a href="https://t.me/Asqaraliyev_Faxriddin" target="_blank" class="font-medium">@Asqaraliyev_Faxriddin</a>
+        </div>
+        <div>
+          <p class="text-gray-500" data-i18n="contactEmail">Email</p>
+          <a href="mailto:asqaraliyevfaxriddin2010@gmail.com" class="font-medium">asqaraliyevfaxriddin2010@gmail.com</a>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <footer class="py-8 text-center text-sm text-gray-500">Asqaraliyev Faxriddin — <span data-i18n="footer">Barcha huquqlar himoyalangan</span>.</footer>
+<footer class="py-8 text-center text-sm text-gray-500">
+  Asqaraliyev Faxriddin — <span data-i18n="footer">Barcha huquqlar himoyalangan</span>.
+</footer>
 
-  <script>
-    const dict = {
-      uz: {
-        metaTitle: "Asqaraliyev Faxriddin | Node.js Backend Engineer",
-        aboutTitle: "Men haqimda",
-        aboutP1: "Professional faoliyatimning boshida bo‘lishimga qaramay, ko‘plab Telegram botlar va full-stack veb loyihalarni ishlab chiqqanman. Backend arxitekturalarini loyihalash, ma’lumotlar bazalari (SQL) bilan ishlash va samarali algoritmlar yaratishda tajribaga egaman. Loyiha ishlarim ko‘pincha admin va foydalanuvchi panellari, rollarga asoslangan kirish nazorati (RBAC) hamda murakkab mantiqiy yechimlarni o‘z ichiga oladi.",
-        aboutP2: "Najot Ta’limda Full Stack kursining backend modulini muvaffaqiyatli tamomlaganman va hozir frontend modulida bilimlarimni oshirmoqdaman. Bu davr mobaynida REST va GraphQL API larini yaratish, foydalanuvchilarni autentifikatsiya va avtorizatsiya qilish, JWT va refresh tokenlar orqali xavfsizlikni ta’minlash, Clean Architecture va MVC kabi testlanuvchi arxitekturalarni qo‘llashda amaliy ko‘nikmalarga ega bo‘ldim.",
-        aboutP3: "Shuningdek, backend xizmatlari bilan integratsiyalangan Telegram botlar ishlab chiqdim, bu foydalanuvchilar uchun avtomatlashtirilgan va interaktiv funksiyalarni taqdim etdi. Asinxron amallar, tranzaksiyalar, ACID prinsiplari orqali ma’lumotlar ishonchliligi va xavfsizligini ta’minlashni o‘rgandim.",
-        aboutP4: "Hozirda React.js, JavaScript va Tailwind CSS yordamida zamonaviy, responsiv va foydalanuvchilarga qulay interfeyslar yaratishni o‘rganmoqdaman. Backend va Frontend sohalaridagi qo‘shimcha tajribam tufayli men yuqori sifatli, to‘liq ishlaydigan veb-ilovalarni yaratishga qodir bo‘lgan to‘laqonli Full Stack dasturchiga aylanib boryapman.",
-        stackTitle: "Texnologiyalar"
-      },
-      ru: {
-        metaTitle: "Аскарлиев Фахриддин | Node.js Backend Engineer",
-        aboutTitle: "Обо мне",
-        aboutP1: "Хотя я в начале профессиональной карьеры, я уже разработал множество телеграм-ботов и full-stack веб-проектов. У меня есть опыт проектирования серверных архитектур, работы с базами данных (SQL) и построения эффективных алгоритмов. Мои проекты часто включают панели администратора и пользователя, ролевой контроль доступа (RBAC) и сложную бизнес-логику.",
-        aboutP2: "Я успешно завершил backend модуль курса Full Stack в филиале Najot Ta'lim в Фергане и сейчас прохожу frontend модуль. В этот период я получил практический опыт разработки REST и GraphQL API, аутентификации и авторизации пользователей, реализации JWT и refresh токенов, а также применения архитектур MVC и Clean Architecture.",
-        aboutP3: "Кроме того, я разработал телеграм-ботов с интеграцией серверных сервисов, обеспечивая автоматизированные и интерактивные функции для пользователей. Я научился работать с асинхронными процессами, транзакциями, принципами ACID и обеспечивать надежность и безопасность данных.",
-        aboutP4: "В настоящее время изучаю создание современных адаптивных интерфейсов с использованием React.js, JavaScript и Tailwind CSS. Благодаря опыту в backend и frontend я становлюсь полноценным Full Stack разработчиком, способным создавать качественные и полностью функциональные веб-приложения.",
-        stackTitle: "Технологии"
-      },
-      en: {
-        metaTitle: "Asqaraliyev Faxriddin | Node.js Backend Engineer",
-        aboutTitle: "About Me",
-        aboutP1: "Although at the beginning of my career, I have already developed numerous Telegram bots and full-stack web projects. I am experienced in designing backend architectures, working with databases (SQL), and building efficient algorithms. My projects often include admin and user panels, role-based access control (RBAC), and complex logic handling.",
-        aboutP2: "I have successfully completed the backend module of Najot Ta'lim's Full Stack course in Fergana and am now focusing on the frontend module. During this period, I gained practical experience in building REST and GraphQL APIs, implementing user authentication and authorization, JWT and refresh token security, and applying MVC and Clean Architecture patterns.",
-        aboutP3: "Additionally, I developed Telegram bots integrated with backend services, providing automated and interactive features for users. I gained skills in handling asynchronous operations, transactions, ACID principles, and ensuring data reliability and security.",
-        aboutP4: "Currently, I am learning to build modern, responsive, and user-friendly interfaces using React.js, JavaScript, and Tailwind CSS. With combined experience in both backend and frontend development, I am becoming a well-rounded full-stack developer capable of building high-quality, fully functional web applications.",
-        stackTitle: "Tech Stack"
-      }
-    };
-  
-    const htmlEl = document.documentElement;
-    const buttons = document.querySelectorAll('.lang-btn');
-  
-    function applyLang(lang) {
-      const bundle = dict[lang] || dict.uz;
-      document.title = bundle.metaTitle;
-  
-      document.querySelector('#about h3').textContent = bundle.aboutTitle;
-      const ps = document.querySelectorAll('#about p');
-      ps[0].textContent = bundle.aboutP1;
-      ps[1].textContent = bundle.aboutP2;
-      ps[2].textContent = bundle.aboutP3;
-      ps[3].textContent = bundle.aboutP4;
-      ps[4].querySelector('strong').textContent = bundle.stackTitle;
-  
-      htmlEl.setAttribute('lang', lang);
-      localStorage.setItem('lang', lang);
-      buttons.forEach(b => {
-        if (b.dataset.lang === lang) {
-          b.classList.add('bg-gray-900','text-white');
-        } else {
-          b.classList.remove('bg-gray-900','text-white');
-        }
-      });
+<script>
+const dict = {
+  uz: {
+    metaTitle: "Asqaraliyev Faxriddin | Node.js Backend Engineer",
+    navContact: "Bogʻlanish",
+    role: "Node.js Backend Engineer",
+    heroText: "Telegram botlar va full‑stack loyihalar: server arxitekturasi, SQL/MongoDB, RBAC, samarali algoritmlar.",
+    viewProjects: "Loyihalarni ko‘rish",
+    learnMore: "Batafsil",
+    aboutTitle: "Men haqimda",
+    aboutP1: "Professional faoliyatimning boshida bo‘lishimga qaramay, ko‘plab Telegram botlar va full-stack veb loyihalarni ishlab chiqqanman. Backend arxitekturalarini loyihalash, ma’lumotlar bazalari (SQL) bilan ishlash va samarali algoritmlar yaratishda tajribaga egaman. Loyiha ishlarim ko‘pincha admin va foydalanuvchi panellari, rollarga asoslangan kirish nazorati (RBAC) hamda murakkab mantiqiy yechimlarni o‘z ichiga oladi.",
+    aboutP2: "Najot Ta’limda Full Stack kursining backend modulini muvaffaqiyatli tamomlaganman va hozir frontend modulida bilimlarimni oshirmoqdaman. Bu davr mobaynida REST va GraphQL API larini yaratish, foydalanuvchilarni autentifikatsiya va avtorizatsiya qilish, JWT va refresh tokenlar orqali xavfsizlikni ta’minlash, Clean Architecture va MVC kabi testlanuvchi arxitekturalarni qo‘llashda amaliy ko‘nikmalarga ega bo‘ldim.",
+    aboutP3: "Shuningdek, backend xizmatlari bilan integratsiyalangan Telegram botlar ishlab chiqdim, bu foydalanuvchilar uchun avtomatlashtirilgan va interaktiv funksiyalarni taqdim etdi. Asinxron amallar, tranzaksiyalar, ACID prinsiplari orqali ma’lumotlar ishonchliligi va xavfsizligini ta’minlashni o‘rgandim.",
+    aboutP4: "Hozirda React.js, JavaScript va Tailwind CSS yordamida zamonaviy, responsiv va foydalanuvchilarga qulay interfeyslar yaratishni o‘rganmoqdaman. Backend va Frontend sohalaridagi qo‘shimcha tajribam tufayli men yuqori sifatli, to‘liq ishlaydigan veb-ilovalarni yaratishga qodir bo‘lgan to‘laqonli Full Stack dasturchiga aylanib boryapman.",
+    stackTitle: "Texnologiyalar",
+    projectsTitle: "Loyihalar",
+    openGithub: "GitHub",
+    proj1Desc: "Interaktiv va avtomatlashtirilgan funksiyalar, backend integratsiyasi.",
+    proj2Desc: "Foydalanuvchi va admin panellari, RBAC, ma’lumotlar bazasi bilan ishlash.",
+    contactTitle: "Bog‘lanish",
+    contactPhone: "Telefon",
+    contactTelegram: "Telegram",
+    contactEmail: "Email",
+    footer: "Barcha huquqlar himoyalangan"
+  },
+  ru: {
+    metaTitle: "Аскарлиев Фахриддин | Node.js Backend Engineer",
+    navContact: "Связаться",
+    role: "Node.js Backend Engineer",
+    heroText: "Телеграм-боты и full‑stack проекты: серверная архитектура, SQL/MongoDB, RBAC, эффективные алгоритмы.",
+    viewProjects: "Просмотреть проекты",
+    learnMore: "Подробнее",
+    aboutTitle: "Обо мне",
+    aboutP1: "Хотя я в начале профессиональной карьеры, я уже разработал множество телеграм-ботов и full-stack веб-проектов. У меня есть опыт проектирования серверных архитектур, работы с базами данных (SQL) и построения эффективных алгоритмов. Мои проекты часто включают панели администратора и пользователя, ролевой контроль доступа (RBAC) и сложную бизнес-логику.",
+    aboutP2: "Я успешно завершил backend модуль курса Full Stack в филиале Najot Ta'lim в Фергане и сейчас прохожу frontend модуль. В этот период я получил практический опыт разработки REST и GraphQL API, аутентификации и авторизации пользователей, реализации JWT и refresh токенов, а также применения архитектур MVC и Clean Architecture.",
+    aboutP3: "Кроме того, я разработал телеграм-ботов с интеграцией серверных сервисов, обеспечивая автоматизированные и интерактивные функции для пользователей. Я научился работать с асинхронными процессами, транзакциями, принципами ACID и обеспечивать надежность и безопасность данных.",
+    aboutP4: "В настоящее время изучаю создание современных адаптивных интерфейсов с использованием React.js, JavaScript и Tailwind CSS. Благодаря опыту в backend и frontend я становлюсь полноценным Full Stack разработчиком, способным создавать качественные и полностью функциональные веб-приложения.",
+    stackTitle: "Технологии",
+    projectsTitle: "Проекты",
+    openGithub: "GitHub",
+    proj1Desc: "Интерактивные и автоматизированные функции, интеграция с backend.",
+    proj2Desc: "Панели пользователя и администратора, RBAC, работа с базой данных.",
+    contactTitle: "Связаться",
+    contactPhone: "Телефон",
+    contactTelegram: "Telegram",
+    contactEmail: "Email",
+   
+    footer: "Все права защищены"
+  },
+  en: {
+    metaTitle: "Asqaraliyev Faxriddin | Node.js Backend Engineer",
+    navContact: "Contact",
+    role: "Node.js Backend Engineer",
+    heroText: "Telegram bots and full‑stack projects: server architecture, SQL/MongoDB, RBAC, efficient algorithms.",
+    viewProjects: "View Projects",
+    learnMore: "Learn More",
+    aboutTitle: "About Me",
+    aboutP1: "Although at the beginning of my career, I have already developed numerous Telegram bots and full-stack web projects. I am experienced in designing backend architectures, working with databases (SQL), and building efficient algorithms. My projects often include admin and user panels, role-based access control (RBAC), and complex logic handling.",
+    aboutP2: "I have successfully completed the backend module of Najot Ta'lim's Full Stack course in Fergana and am now focusing on the frontend module. During this period, I gained practical experience in building REST and GraphQL APIs, implementing user authentication and authorization, JWT and refresh token security, and applying MVC and Clean Architecture patterns.",
+    aboutP3: "Additionally, I developed Telegram bots integrated with backend services, providing automated and interactive features for users. I gained skills in handling asynchronous operations, transactions, ACID principles, and ensuring data reliability and security.",
+    aboutP4: "Currently, I am learning to build modern, responsive, and user-friendly interfaces using React.js, JavaScript, and Tailwind CSS. With combined experience in both backend and frontend development, I am becoming a well-rounded full-stack developer capable of building high-quality, fully functional web applications.",
+    stackTitle: "Tech Stack",
+    projectsTitle: "Projects",
+    openGithub: "GitHub",
+    proj1Desc: "Interactive and automated features, backend integration.",
+    proj2Desc: "User and admin panels, RBAC, database management.",
+    contactTitle: "Contact",
+    contactPhone: "Phone",
+    contactTelegram: "Telegram",
+    contactEmail: "Email",
+    footer: "All rights reserved"
+  }
+};
+
+const htmlEl = document.documentElement;
+const buttons = document.querySelectorAll('.lang-btn');
+
+function applyLang(lang) {
+  const bundle = dict[lang] || dict.uz;
+  document.title = bundle.metaTitle;
+
+  document.querySelector('[data-i18n="navContact"]').textContent = bundle.navContact;
+  document.querySelector('[data-i18n="role"]').textContent = bundle.role;
+  document.querySelector('[data-i18n="heroText"]').textContent = bundle.heroText;
+  document.querySelector('[data-i18n="viewProjects"]').textContent = bundle.viewProjects;
+  document.querySelector('[data-i18n="learnMore"]').textContent = bundle.learnMore;
+
+  document.querySelector('[data-i18n="aboutTitle"]').textContent = bundle.aboutTitle;
+  document.querySelector('[data-i18n="aboutP1"]').textContent = bundle.aboutP1;
+  document.querySelector('[data-i18n="aboutP2"]').textContent = bundle.aboutP2;
+  document.querySelector('[data-i18n="aboutP3"]').textContent = bundle.aboutP3;
+  document.querySelector('[data-i18n="aboutP4"]').textContent = bundle.aboutP4;
+  document.querySelector('[data-i18n="stackTitle"]').textContent = bundle.stackTitle;
+
+  document.querySelector('[data-i18n="projectsTitle"]').textContent = bundle.projectsTitle;
+  document.querySelectorAll('[data-i18n="openGithub"]').forEach(el => el.textContent = bundle.openGithub);
+  document.querySelector('[data-i18n="proj1Desc"]').textContent = bundle.proj1Desc;
+  document.querySelector('[data-i18n="proj2Desc"]').textContent = bundle.proj2Desc;
+
+  document.querySelector('[data-i18n="contactTitle"]').textContent = bundle.contactTitle;
+  document.querySelector('[data-i18n="contactPhone"]').textContent = bundle.contactPhone;
+  document.querySelector('[data-i18n="contactTelegram"]').textContent = bundle.contactTelegram;
+  document.querySelector('[data-i18n="contactEmail"]').textContent = bundle.contactEmail;
+
+  document.querySelector('[data-i18n="footer"]').textContent = bundle.footer;
+
+  htmlEl.setAttribute('lang', lang);
+  localStorage.setItem('lang', lang);
+
+  buttons.forEach(b => {
+    if (b.dataset.lang === lang) {
+      b.classList.add('bg-gray-900','text-white');
+    } else {
+      b.classList.remove('bg-gray-900','text-white');
     }
-  
-    const saved = localStorage.getItem('lang') || 'uz';
-    applyLang(saved);
-    buttons.forEach(btn => btn.addEventListener('click', () => applyLang(btn.dataset.lang)));
-  </script>
-  
+  });
+}
+
+const saved = localStorage.getItem('lang') || 'uz';
+applyLang(saved);
+
+buttons.forEach(btn => btn.addEventListener('click', () => applyLang(btn.dataset.lang)));
+</script>
 </body>
 </html>
