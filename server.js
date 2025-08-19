@@ -5,7 +5,7 @@ const app = express();
 // Statik fayllarni berish (img, css, index.html)
 app.use(express.static(path.join(__dirname)));
 
-app.get('/', (req, res) => {
+app.get('/portfolio', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
